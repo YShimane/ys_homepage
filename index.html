@@ -56,6 +56,18 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.04);
             margin-bottom: 30px;
         }
+        .career-with-link {
+            display: flex;
+            align-items: baseline;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .career-with-link span {
+            flex: 1;
+        }
+        .career-with-link a {
+            white-space: nowrap;
+        }
         footer {
             text-align: center;
             padding: 30px;
@@ -75,31 +87,42 @@
         <a href="#research">研究</a>
         <a href="#awards">受賞歴</a>
         <a href="#publications">業績</a>
+        <a href="index_en.html">English</a>
     </nav>
 </header>
 
 <section id="bio">
     <h2>略歴</h2>
     <div class="card">
-        <p>嶋根　裕太（しまね　ゆうた，Shimane Yuta）, 博士（情報理工学）</p>
+        <p><strong>嶋根　裕太</strong>（しまね　ゆうた，Shimane Yuta）<br>博士（情報理工学）</p>
+        <p>&nbsp;</p>
         <p>- 職歴- </p>
-        <p>2025年9月 – 現在 東京大学大学院理学系研究科生物科学専攻 特任助教</p>
+        <p class="career-with-link">
+            <span>2025年9月 現在 東京大学大学院理学系研究科生物科学専攻 特任助教</span>
+            <a href="https://www.u-tokyo.ac.jp/focus/ja/people/k0001_06581.html" target="_blank" rel="noopener noreferrer">[東京大学]</a>
+            <a href="https://www.bs.s.u-tokyo.ac.jp/~ogihara/members.html" target="_blank" rel="noopener noreferrer">[所属研究室]</a>
+        </p>
         <p>2024年 – 2025年 東京大学大学院情報理工学系研究科 研究技術補佐員</p>
         <p>2021年 東京大学大学院情報理工学系研究科 博士課程学生特別リサーチアシスタント</p>
         <p>2018年 – 2021年 特定国立研究開発法人理化学研究所画像情報処理研究チーム 研究パートタイマー</p>
 
         <p>- 学歴 -
-        <p>2025 – 東京大学大学院情報理工学系研究科知能機械情報学専攻博士後期課程課程修了</p>
-        <p>2021 – 東京理科大学大学院理工学研究科機械工学専攻修士課程修了</p>
-        <p>2019 – 東京理科大学理工学部機械工学科卒業</p>
+        <p>2025  東京大学大学院情報理工学系研究科知能機械情報学専攻博士後期課程課程修了</p>
+        <p>2021  東京理科大学大学院理工学研究科機械工学専攻修士課程修了</p>
+        <p>2019  東京理科大学理工学部機械工学科卒業</p>
     </div>
 </section>
 
 <section id="research">
-    <h2>研究</h2>
+    <h2>研究テーマ</h2>
     <div class="card">
-        <p>・義足の柔軟性を活用するスポーツ選手の予測的解析に向けた運動計算と学習</p>
-        <p>・運動の神経メカニズム解明に向けた３次元断層画像に基づくラット筋骨格モデルの開発と定量運動解析
+        <p>・アフリカ大型類人猿のナックルウォークの進化
+        <p class="career-with-link">
+            ・義足の柔軟変形計算とモデル化
+            <a href="https://youtu.be/_hyzSPrb0f8?si=3RtzNUeYIxRq8nSS" target="_blank" rel="noopener noreferrer">[動画]</a>
+        </p>
+        <p>・強化学習と動力学シミュレーションに基づく運動計算と解析
+        <p>・３次元断層画像に基づくラット筋骨格モデルの開発
 </p>
     </div>
 </section>
@@ -107,10 +130,19 @@
 <section id="awards">
     <h2>受賞歴</h2>
     <div class="card">
-        <p>2025 日本ロボット学会第4回若手講演賞</p>
-        <p>2024 日本ロボット学会第5回優秀研究・技術賞</p>
+        <p class="career-with-link">
+            2025 日本ロボット学会第4回若手講演賞
+            <a href="https://robogaku.jp/news/2025/award2025/ac-young.html" target="_blank" rel="noopener noreferrer">[URL]</a>
+        </p>
+        <p class="career-with-link">
+            2024 日本ロボット学会第5回優秀研究・技術賞
+            <a href="https://robogaku.jp/news/2024/award2024/ac-kengi.html" target="_blank" rel="noopener noreferrer">[URL]</a>
+        </p>
         <p>2019 研究推進機構総合研究院脳学際研究部門シンポジウム最優秀発表賞</p>
-        <p>2019 日本機械学会若手優秀講演フェロー賞受賞</p>
+        <p class="career-with-link">
+            2019 日本機械学会若手優秀講演フェロー賞受賞
+            <a href="https://www.tus.ac.jp/today/archive/20200629_9164.html" target="_blank" rel="noopener noreferrer">[URL]</a>
+        </p>
     </div>
 </section>
 
@@ -122,6 +154,17 @@
         <p><strong>Yuta Shimane</strong>, Taiki Ishigaki, Sunghee Kim, Yosuke Ikegami, and Ko Yamamoto, "Application of Piece-wise Constant Strain Model to Flexible Deformation Calculation of Sports Prosthesis and Stiffness Estimation", Proceedings of 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems,pp.12758-12763, 2022.</p>
         <p>Sunghee Kim, Taiki Ishigaki, <strong>Yuta Shimane</strong>, Yosuke Ikegami, and Ko Yamamoto, "Inverse Kinematics of Hybrid Multi-link System and its Application to Motion Capture for Athlete Wearing Sports Prosthesis", Proceedings of 2022 IEEE-RAS International Conference on Humanoid Robots, pp.837-842, 2022.</p>
         <p><strong>Yuta Shimane</strong>, Hiroshi Takemura, Hidekazu Kaneko, Ko Ayusawa, Yuki Tsujimura, Masaaki Mochimaru, Hideo Yokota and Satoshi Oota, "Development of a whole-body skeletal model of a rat based on anatomical landmarks for detailed motion analysis", Proceedings of the 41st International Engineering in Medicine and Biology Conference, ThPOS-34.26, 2019．</p>
+    </div>
+</section>
+
+<section id="project">
+    <h2>競争的資金の獲得</h2>
+    <div class="card">
+        <p class="career-with-link">
+            2026-2027 公益財団法人ヤマハ発動機スポーツ振興財団 スポーツチャレンジ助成
+            <a href="https://www.ymfs.jp/challenger/shimaney/" target="_blank" rel="noopener noreferrer">[URL]</a>
+        </p>
+        <p> 2022-2025 国立研究開発法人科学技術振興機構 (JST) 次世代研究者挑戦的研究プログラム </p>
     </div>
 </section>
 
