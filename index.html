@@ -94,6 +94,30 @@
             font-size: 0.95rem;
             margin-bottom: 4px;
         }
+        .researcher-links {
+            margin: 14px 0 0;
+            font-size: 0.92rem;
+        }
+        .researcher-links strong {
+            display: block;
+            margin-bottom: 6px;
+        }
+        .researcher-links-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .researcher-links a {
+            padding: 3px 8px;
+            border: 1px solid #c9b4b4;
+            border-radius: 5px;
+            color: #704b4b;
+            line-height: 1.4;
+            text-decoration: none;
+        }
+        .researcher-links a:hover {
+            background: #f5eded;
+        }
         .career-with-link {
             display: flex;
             align-items: baseline;
@@ -104,6 +128,15 @@
             flex: 1;
         }
         .career-with-link a {
+            white-space: nowrap;
+        }
+        .project-entry {
+            display: grid;
+            grid-template-columns: max-content minmax(0, 1fr);
+            column-gap: 0.5em;
+            align-items: baseline;
+        }
+        .project-entry a {
             white-space: nowrap;
         }
         .research-intro {
@@ -159,6 +192,16 @@
                 <strong>研究分野</strong>
                 ロボティクス / 生体力学 / 運動解析 / 筋骨格シミュレーション / AI
             </p>
+            <div class="researcher-links">
+                <strong>研究者情報</strong>
+                <div class="researcher-links-list">
+                    <a href="https://orcid.org/0009-0009-1609-9811" target="_blank" rel="noopener noreferrer">ORCID</a>
+                    <a href="https://nrid.nii.ac.jp/ja/nrid/1000031034209/" target="_blank" rel="noopener noreferrer">KAKEN</a>
+                    <a href="https://researchmap.jp/shimane-yuta/?lang=japanese" target="_blank" rel="noopener noreferrer">researchmap</a>
+                    <a href="https://jglobal.jst.go.jp/detail/?JGLOBAL_ID=202501013684568091&amp;t=1" target="_blank" rel="noopener noreferrer">J-GLOBAL</a>
+                    <a href="https://scholar.google.com/citations?user=azc7nU4AAAAJ&amp;hl=ja&amp;oi=sra" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                </div>
+            </div>
         </aside>
     </div>
 </section>
@@ -196,13 +239,13 @@
             特に，身体力学や運動制御のモデル化に基づき，計算機シミュレーションを用いた構成論的研究に取り組んでいます．
             また，ヒトを含む霊長類やげっ歯類の運動について，生体力学的分析研究も行っています．
         </p>
-        <p>・アフリカ大型類人猿のナックルウォークの進化
+        <p>・ヒトの直立二足歩行の進化とアフリカ大型類人猿のナックルウォークの進化
         <p class="career-with-link">
-            ・義足の柔軟変形計算とモデル化
+            ・義足の柔軟変形計算と力学パラメータ同定
             <a href="https://youtu.be/_hyzSPrb0f8?si=3RtzNUeYIxRq8nSS" target="_blank" rel="noopener noreferrer">[動画]</a>
         </p>
         <p class="career-with-link">
-            ・強化学習と動力学シミュレーションに基づく運動計算と解析
+            ・強化学習に基づく動力学シミュレーションによる運動計算と学習
             <a href="https://youtu.be/2BA41cBdyn4?si=1STAY6l6Hyn4L8s-" target="_blank" rel="noopener noreferrer">[動画]</a>
         </p>
         <p>・３次元断層画像に基づくラット筋骨格モデルの開発
@@ -244,18 +287,26 @@
 <section id="project">
     <h2>競争的資金の獲得</h2>
     <div class="card">
-        <p class="career-with-link">
-            2026-2027 全身動力学シミュレーションに基づくスポーツ義足の力学的寄与の構成論的研究<br>
-            　　　　　科学研究費助成事業研究活動スタート支援（26K25569）
-            <a href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-26K25569/" target="_blank" rel="noopener noreferrer">[URL]</a>
+        <p class="project-entry">
+            <span>2026-2027</span>
+            <span>全身動力学シミュレーションに基づくスポーツ義足の力学的寄与の構成論的研究<br>
+                科学研究費助成事業研究活動スタート支援（26K25569）
+                <a href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-26K25569/" target="_blank" rel="noopener noreferrer">[URL]</a>
+            </span>
         </p>
-        <p class="career-with-link">
-            2026-2027 強化学習を用いたスポーツ義足と身体制御の共設計による運動メカニズムの解明<br>
-            　　　　　公益財団法人ヤマハ発動機スポーツ振興財団 スポーツチャレンジ助成 
-            <a href="https://www.ymfs.jp/challenger/shimaney/" target="_blank" rel="noopener noreferrer">[URL]</a>
+        <p class="project-entry">
+            <span>2026-2027</span>
+            <span>強化学習を用いたスポーツ義足と身体制御の共設計による運動メカニズムの解明<br>
+                公益財団法人ヤマハ発動機スポーツ振興財団 スポーツチャレンジ助成
+                <a href="https://www.ymfs.jp/challenger/shimaney/" target="_blank" rel="noopener noreferrer">[URL]</a>
+            </span>
         </p>
-        <p> 2022-2025 ハイブリッドリンクシミュレーションモデルによる義足ランナーのパフォーマンス最大化<br> 
-            　　　　　国立研究開発法人科学技術振興機構 (JST) 次世代研究者挑戦的研究プログラム </p>
+        <p class="project-entry">
+            <span>2022-2025</span>
+            <span>ハイブリッドリンクシミュレーションモデルによる義足ランナーのパフォーマンス最大化<br>
+                国立研究開発法人科学技術振興機構 (JST) 次世代研究者挑戦的研究プログラム
+            </span>
+        </p>
     </div>
 </section>
 

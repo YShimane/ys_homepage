@@ -94,6 +94,30 @@
             font-size: 0.95rem;
             margin-bottom: 4px;
         }
+        .researcher-links {
+            margin: 14px 0 0;
+            font-size: 0.92rem;
+        }
+        .researcher-links strong {
+            display: block;
+            margin-bottom: 6px;
+        }
+        .researcher-links-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .researcher-links a {
+            padding: 3px 8px;
+            border: 1px solid #c9b4b4;
+            border-radius: 5px;
+            color: #704b4b;
+            line-height: 1.4;
+            text-decoration: none;
+        }
+        .researcher-links a:hover {
+            background: #f5eded;
+        }
         .career-with-link {
             display: flex;
             align-items: baseline;
@@ -105,6 +129,18 @@
         }
         .career-with-link a {
             white-space: nowrap;
+        }
+        .project-entry {
+            display: grid;
+            grid-template-columns: max-content minmax(0, 1fr);
+            column-gap: 0.5em;
+            align-items: baseline;
+        }
+        .project-entry a {
+            white-space: nowrap;
+        }
+        .research-intro {
+            text-indent: 1em;
         }
         footer {
             text-align: center;
@@ -143,8 +179,9 @@
     <h2>News</h2>
     <div class="news-layout">
         <div class="card">
+            <p>2026-07-31: Supported by a JSPS KAKENHI Grant-in-Aid for Research Activity Start-up.</p>
             <p>2026-05-15: Accepted to IEEE RA-L.</p>
-            <p>2026-03-14: Selected for the Yamaha Motor Foundation for Sports, Sports Challenge Grant.</p>
+            <p>2026-03-14: Supported by the Yamaha Motor Foundation for Sports, Sports Challenge Grant.</p>
             <p>2025-10-01: Appointed as Project Assistant Professor at the Department of Biological Sciences, Graduate School of Science, The University of Tokyo.</p>
             <p>2025-09-05: Received the 4th Young Researcher Presentation Award from the Robotics Society of Japan.</p>
             <p>&nbsp;</p>
@@ -155,6 +192,16 @@
                 <strong>Research Areas</strong>
                 Robotics / Biomechanics / Motion Analysis / Musculoskeletal Simulation / AI
             </p>
+            <div class="researcher-links">
+                <strong>Researcher Profiles</strong>
+                <div class="researcher-links-list">
+                    <a href="https://orcid.org/0009-0009-1609-9811" target="_blank" rel="noopener noreferrer">ORCID</a>
+                    <a href="https://nrid.nii.ac.jp/nrid/1000031034209/" target="_blank" rel="noopener noreferrer">KAKEN</a>
+                    <a href="https://researchmap.jp/shimane-yuta/?lang=english" target="_blank" rel="noopener noreferrer">researchmap</a>
+                    <a href="https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202501013684568091" target="_blank" rel="noopener noreferrer">J-GLOBAL</a>
+                    <a href="https://scholar.google.com/citations?user=azc7nU4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                </div>
+            </div>
         </aside>
     </div>
 </section>
@@ -180,20 +227,25 @@
         <p>2019: B.Eng., Department of Mechanical Engineering, Tokyo University of Science</p>
 
         <p>- Academic Memberships -</p>
-        <p>The Robotics Society of Japan / The Japan Society of Mechanical Engineers / Institute of Electrical and Electronics Engineers (IEEE)</p>
+        <p>The Robotics Society of Japan / The Japan Society of Mechanical Engineers / The Primate Society of Japan / Institute of Electrical and Electronics Engineers (IEEE)</p>
     </div>
 </section>
 
 <section id="research">
     <h2>Research Topics</h2>
     <div class="card">
-        <p>Evolution of knuckle-walking in African great apes</p>
+        <p class="research-intro">
+            Starting from the fundamental question of how humans skillfully control their bodies, my research aims to elucidate human motor function from a mechanical perspective.
+            In particular, I take a constructive approach using computer simulations based on models of body mechanics and motor control.
+            I also conduct biomechanical analyses of locomotion in primates, including humans, and rodents.
+        </p>
+        <p>Evolution of human bipedalism and knuckle-walking in African great apes</p>
         <p class="career-with-link">
-            <span>Flexible deformation computation and modeling of sports prostheses</span>
+            <span>Flexible deformation computation and mechanical parameter identification of sports prostheses</span>
             <a href="https://youtu.be/_hyzSPrb0f8?si=3RtzNUeYIxRq8nSS" target="_blank" rel="noopener noreferrer">[Video]</a>
         </p>
         <p class="career-with-link">
-            <span>Motion computation and analysis based on reinforcement learning and whole-body dynamic simulation</span>
+            <span>Motion computation and learning using dynamic simulations based on reinforcement learning</span>
             <a href="https://youtu.be/2BA41cBdyn4?si=1STAY6l6Hyn4L8s-" target="_blank" rel="noopener noreferrer">[Video]</a>
         </p>
         <p>Development of a rat musculoskeletal model based on 3D scan images</p>
@@ -234,11 +286,26 @@
 <section id="project">
     <h2>Grants</h2>
     <div class="card">
-        <p class="career-with-link">
-            <span>2026-2027: Yamaha Motor Foundation for Sports, Sports Challenge Grant</span>
-            <a href="https://www.ymfs.jp/challenger/shimaney/" target="_blank" rel="noopener noreferrer">[URL]</a>
+        <p class="project-entry">
+            <span>2026-2027</span>
+            <span>Constructive Study of the Mechanical Contribution of Sports Prostheses Based on Whole-Body Dynamics Simulation<br>
+                JSPS KAKENHI Grant-in-Aid for Research Activity Start-up (26K25569)
+                <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-26K25569/" target="_blank" rel="noopener noreferrer">[URL]</a>
+            </span>
         </p>
-        <p>2022-2025: JST Support for Pioneering Research Initiated by the Next Generation (SPRING)</p>
+        <p class="project-entry">
+            <span>2026-2027</span>
+            <span>Elucidating Movement Mechanisms through the Co-design of Sports Prostheses and Body Control Using Reinforcement Learning<br>
+                Yamaha Motor Foundation for Sports, Sports Challenge Grant
+                <a href="https://www.ymfs.jp/challenger/shimaney/" target="_blank" rel="noopener noreferrer">[URL]</a>
+            </span>
+        </p>
+        <p class="project-entry">
+            <span>2022-2025</span>
+            <span>Maximizing the Performance of Prosthetic Runners Using a Hybrid-link Simulation Model<br>
+                Japan Science and Technology Agency (JST), Support for Pioneering Research Initiated by the Next Generation (SPRING)
+            </span>
+        </p>
     </div>
 </section>
 
