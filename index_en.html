@@ -14,35 +14,28 @@
         }
         header {
             text-align: center;
-            padding: 90px 20px;
-            background:
-                linear-gradient(rgba(0,0,0,0.32), rgba(0,0,0,0.32)),
-                url("image/top.png") center / cover no-repeat;
-            border-bottom: 1px solid rgba(255,255,255,0.25);
-            color: white;
+            background: white;
+            border-bottom: 1px solid #ddd;
         }
-        header h1 {
-            font-size: 2.4rem;
-            margin-bottom: 0.4rem;
-            text-shadow: 0 2px 12px rgba(0,0,0,0.35);
-        }
-        header p {
-            color: rgba(255,255,255,0.92);
-            text-shadow: 0 2px 10px rgba(0,0,0,0.35);
+        .header-image {
+            display: block;
+            width: 100%;
+            height: auto;
         }
         nav {
-            text-align: center;
-            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px 30px;
+            padding: 16px 20px;
         }
         nav a {
-            margin: 0 15px;
             text-decoration: none;
-            color: rgba(255,255,255,0.92);
+            color: #704b4b;
             font-weight: 600;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.35);
         }
         nav a:hover {
-            color: #ffd6df;
+            color: #333;
         }
         section {
             max-width: 900px;
@@ -179,8 +172,7 @@
 <body>
 
 <header>
-    <h1>Yuta Shimane, Ph.D.</h1>
-    <p>Researcher in Robotics / Biomechanics</p>
+    <img class="header-image" src="image/hedder.png" width="2506" height="700" alt="Yuta Shimane, Ph.D. — Researcher in Robotics / Biomechanics">
     <nav>
         <a href="#news">News</a>
         <a href="#bio">Biography</a>
@@ -195,6 +187,7 @@
     <h2>News</h2>
     <div class="news-layout">
         <div class="card">
+            <p>2026-10-01: Awarded a Second-Half International Exchange Grant from the Tateisi Science and Technology Foundation.</p>
             <p>2026-09-05: Received the Best Young Researcher Presentation Award at the Joint Meeting of the 42nd Congress of the Primate Society of Japan, the 80th Anthropological Society of Nippon Meeting, and the 88th Japanese Society of Physiological Anthropology Meeting.</p>
             <p>2026-07-31: Supported by a JSPS KAKENHI Grant-in-Aid for Research Activity Start-up.</p>
             <p>2026-05-15: Accepted to IEEE RA-L.</p>
@@ -264,7 +257,7 @@
             <span>Motion computation and learning using dynamic simulations based on reinforcement learning</span>
             <a href="https://youtu.be/2BA41cBdyn4?si=1STAY6l6Hyn4L8s-" target="_blank" rel="noopener noreferrer">[Video]</a>
         </p>
-        <p>Development of a rat musculoskeletal model based on 3D scan images</p>
+        <p>Development of a rat musculoskeletal model based on 3D tomographic images</p>
     </div>
 </section>
 
@@ -337,7 +330,8 @@
         <h3>Travel Grants</h3>
         <p class="project-entry">
             <span>2026</span>
-            <span>Tateisi Science and Technology Foundation, Second-Half International Exchange Grant
+            <span>Simulation of Adaptive Running with Flexible Sports Prosthesis using Reinforcement Learning of Hybrid-link System<br>
+                Tateisi Science and Technology Foundation, Second-Half International Exchange Grant
                 <a href="https://www.tateisi-f.org/documents/research/list/2026grantlist.html#koryu2" target="_blank" rel="noopener noreferrer">[URL]</a>
             </span>
         </p>

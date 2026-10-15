@@ -14,35 +14,28 @@
         }
         header {
             text-align: center;
-            padding: 90px 20px;
-            background:
-                linear-gradient(rgba(0,0,0,0.32), rgba(0,0,0,0.32)),
-                url("image/top.png") center / cover no-repeat;
-            border-bottom: 1px solid rgba(255,255,255,0.25);
-            color: white;
+            background: white;
+            border-bottom: 1px solid #ddd;
         }
-        header h1 {
-            font-size: 2.4rem;
-            margin-bottom: 0.4rem;
-            text-shadow: 0 2px 12px rgba(0,0,0,0.35);
-        }
-        header p {
-            color: rgba(255,255,255,0.92);
-            text-shadow: 0 2px 10px rgba(0,0,0,0.35);
+        .header-image {
+            display: block;
+            width: 100%;
+            height: auto;
         }
         nav {
-            text-align: center;
-            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px 30px;
+            padding: 16px 20px;
         }
         nav a {
-            margin: 0 15px;
             text-decoration: none;
-            color: rgba(255,255,255,0.92);
+            color: #704b4b;
             font-weight: 600;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.35);
         }
         nav a:hover {
-            color: #ffd6df;
+            color: #333;
         }
         section {
             max-width: 900px;
@@ -179,8 +172,7 @@
 <body>
 
 <header>
-    <h1>Yuta Shimane, Ph.D.</h1>
-    <p>Researcher in Robotics / Biomechanics</p>
+    <img class="header-image" src="image/hedder.png" width="2506" height="700" alt="Yuta Shimane, Ph.D. — Researcher in Robotics / Biomechanics">
     <nav>
         <a href="#news">News</a>
         <a href="#bio">略歴</a>
